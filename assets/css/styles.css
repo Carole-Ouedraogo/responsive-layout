@@ -97,7 +97,7 @@ main {
 }
 .alt-content {
     background-color: #8cd6e2;
-    min-height: 250px;
+    min-height: 200px;
 }
 .main-content div {
     text-align: center;
@@ -116,7 +116,7 @@ main {
     text-align: center;
 }
 .contact-info {
-    margin: 10px 0;
+    margin: 20px 0;
     padding: 10px 15px;
 }
 .contact-info span {
