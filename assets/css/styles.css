@@ -47,9 +47,13 @@ section h3 {
  * Header Area
  * ========================= 
 */
+
 .header-content p,
 .header-content img {
     vertical-align: top;
+}
+.header-content div:first-child {
+    padding: 10px;
 }
 .author a,
 .nav {
@@ -95,11 +99,20 @@ main {
     background-color: #8cd6e2;
     min-height: 250px;
 }
+.main-content div {
+    text-align: center;
+}
 .col {
     display: block;
     padding: 10px 5px;
     width: 97%;
     margin: 0 auto;
+    text-align: center;
+}
+
+.profile-image,
+.profile-about {
+    width: 100%;
     text-align: center;
 }
 .contact-info {
@@ -138,7 +151,21 @@ main {
         vertical-align: top;
         width: 48%;
         text-align: left;
-    }    
+    }
+    .profile-about {
+        width: 50%;
+    }
+    .profile-image {
+        width: 45%;
+    }
+    .profile-about,
+    .profile-image {
+        text-align: left;
+    }
+
+    .header-content div:first-child {
+        padding: 20px 0;
+    }
 }
 
 @media (min-width: 1025px){
@@ -147,7 +174,14 @@ main {
         padding: 10px 5px;
         vertical-align: top;
         width: 31%;
-    }   
+    }
+    .profile-about {
+        width: 60%;
+    }
+    .profile-image {
+        width: 35%;
+    }
+
 }
 
 /* ========================
