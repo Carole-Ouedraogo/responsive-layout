@@ -1,0 +1,112 @@
+/* =======================================
+ * Project 2 - Responsive Layout
+ * Author: Chris Howell
+ * Date: 04/26/2018
+ * =======================================
+*/
+
+img {
+    max-width: 100%;
+}
+body {
+    background-color: #eee;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    
+}
+
+a:link,
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* ========================
+ * Header Area
+ * ========================= 
+*/
+.header-content p,
+.header-content img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.author a,
+.nav {
+    display: block;
+    list-style: none;
+    text-align: center;
+}
+.nav > li a {
+    padding: 10px 15px;
+    display: block;
+    
+}
+
+/* ========================
+ * Content Area
+ * ========================= 
+*/
+
+main {
+    background-color: #fff;
+}
+.main-content,
+.alt-content{
+    padding: 20px 10px;
+}
+.alt-content {
+    background-color: #eee;
+}
+.col {
+    display: block;
+    width: 100%;
+}
+
+
+/* ========================
+ * Media Queries
+ * ========================= 
+*/
+@media (min-width: 769px) {
+    .container {
+        margin: 0 auto;
+        max-width: 1150px;
+        width: 85%;
+    }
+    .nav,
+    .nav li {
+        float: left;
+    }
+    .nav {
+        float: right;
+    }
+    .author {
+        float: left;
+    }
+
+    .col {
+        display: inline-block;
+        margin-right: -2px;
+        vertical-align: top;
+        width: 49%;
+    }    
+}
+
+@media (min-width: 1025px){
+    .col {
+        display: inline-block;
+        margin-right: -1px;
+        vertical-align: top;
+        width: 33%;
+    }   
+}
+
+.cf::after {
+    content: "";
+    display: table;
+    clear: both;
+}
