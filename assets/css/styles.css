@@ -123,7 +123,24 @@ main {
     margin: 0 10px;
     font-weight: bold;
 }
+#secondary-nav .author{
+    padding: 0;
+    margin: 10px 0;
+    font-size: 1.2em;
+    float: left;
+}
+#secondary-nav .nav {
+    float: right;
+    margin: 10px 0;
+}
+#secondary-nav ul li {
+    display: none;
+}
+#secondary-nav ul li:last-child {
+    display: block;
 
+    
+}
 /* ========================
  * Media Queries
  * ========================= 
@@ -134,15 +151,27 @@ main {
         max-width: 1150px;
         width: 89%;
     }
-    .nav,
-    .nav li {
-        float: left;
-    }
-    .nav {
+    #secondary-nav .nav {
         float: right;
     }
-    .author {
+    #secondary-nav .author {
         float: left;
+    }
+    #secondary-nav .nav {
+        float: right;
+    }
+    #secondary-nav ul li {
+        display: inline-block;
+    }
+    #secondary-nav ul li:last-child {
+        display: none;
+    }
+    .nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .nav li {
+        display: inline-block;
     }
 
     .col {
@@ -169,11 +198,24 @@ main {
 }
 
 @media (min-width: 1025px){
+    
     .col {
         display: inline-block;
         padding: 10px 5px;
         vertical-align: top;
         width: 31%;
+    }
+    .nav {
+        float: right;
+    }
+    .author {
+        float: left;
+    }
+    .nav {
+        float: right;
+    }
+    .nav li{
+        display: inline-block;
     }
     .profile-about {
         width: 60%;
